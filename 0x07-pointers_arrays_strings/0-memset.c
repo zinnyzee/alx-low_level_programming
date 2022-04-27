@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * memset - Fills the first n bytes of the memory area
@@ -18,4 +19,4 @@ void *_memset(void *s, int c, size_t n)
 		memory[index] = value;
 
 	return (memory);
-}	
+}
