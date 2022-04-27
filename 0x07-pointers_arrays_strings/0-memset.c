@@ -6,18 +6,15 @@
 * @n: bytes of the memory
 * Return: dest
 */
-
-char *_memset(char *s, char b, unsigned int n)
-
+void *_memset(void *s, int c, size_t n)
 {
-	unsigned int i;
+	unsigned int index;
+	unsigned char *memory = s, value = c;
 
-	/*Delacring FOR*/
-	for (i = 0; i < n; i++)
-	{
-		*(s + i) = b; /*add 1 position s*/
+	for (index = 0; index < n; index++)
+	memory[index] = value;
 
-	} /*END FOR*/
-
-	return (s);
+	return (memory);
 }
+
+
